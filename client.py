@@ -4,14 +4,6 @@ import pygame
 from tkinter import messagebox
 from net import Network
 import time
-import requests
-
-current_file = open('client.py').read()
-if not current_file == requests.get('https://raw.githubusercontent.com/mabdullahprogrammer/UNO/refs/heads/main/client.py').content:
-    print('Update Needed')
-    exit()
-
-
 
 width, height = 1340, 700
 win = pygame.display.set_mode((width, height))
